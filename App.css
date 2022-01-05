@@ -1,0 +1,75 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,800&display=swap');
+
+ .App{
+   max-width: 860px;
+   margin:40px auto;
+
+ }
+ button{
+   background:none;
+   border:2px solid #efff;
+   padding:6px 10px;
+   border-radius:4px;
+   color:#efff;
+   font-weight:bold;
+   cursor:pointer;
+   font-size:1em;
+
+ }
+ button:hover{
+   background:#c23866;
+   color:#efff; 
+ }
+body{
+  margin :0;
+  text-align:center;
+  background: #1b1523;
+  font-size: 1.5em;
+  color:white;
+}
+.card-grid{
+  margin-top:48px;
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+  grid-gap:20px;
+
+}
+.card{
+  position:relative;
+
+}
+.card img {
+  width: 100%;
+  display: block;
+  border:2px solid #efff;
+  border-radius: 6px;
+  
+}
+/* flipped card the picture*/
+.card .front {
+  transform: rotateY(90deg);
+  position:absolute;
+
+}
+.flipped .front{
+  transform: rotateY(0deg);
+}
+
+/*back of the -cover*/
+.card .back{
+  transition: all ease-in 0.2s;
+  transition-delay: 0.2s;
+
+}
+.flipped .back{
+  transform: rotateY(90deg);
+  transition-delay: 0s;
+
+}
+
+
+
+
